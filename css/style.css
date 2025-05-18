@@ -1,0 +1,123 @@
+@import url("./reset.css");
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+article {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    min-height: 600px;
+    border-radius: 10px;
+    padding: 20px; 
+}
+
+.photo-container {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 40px;
+
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 60px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.company-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+@media (min-width: 500px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 500px;
+        min-height: 300px;
+    }
+    .info-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 5px;
+    }
+    .company-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 5px;
+    }
+    .company-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+
